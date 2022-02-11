@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="nav-logo">Company Logo</a>
+    </header>
+    <div class="main">
+      <div class="hero">
+        <div class="hero-text-block">
+          <h1 class="hero-heading">Your creative web development partner</h1>
+          <h4 class="hero-subheading">This is the perfect subheading</h4>
+          <a href="#" class="hero-btn">Join Us</a>
+          <p class="hero-footnote">30-day money-back guarantee</p>
+        </div>
+      </div>
+      <section class="block-group">
+        <section class="two-col-content">
+          <img class="column-img" src="./images/browser.jpg" alt="" />
+          <div class="column-content">
+            <h2>Lorem psum dolor</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              temporibus ea culpa molestias autem dignissimos nulla ipsam
+              dolorum eligendi fuga? Voluptas architecto nam exercitationem rem
+              fugit maiores, beatae iure aperiam.
+            </p>
+          </div>
+        </section>
+        <section class="two-col-content col-reverse">
+          <img class="column-img" src="./images/lock.png" alt="" />
+          <div class="column-content">
+            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident inventore veniam nobis quos porro. Totam temporibus
+              consequatur officia ipsum a non blanditiis sapiente eaque amet.
+            </p>
+          </div>
+        </section>
+        <section class="two-col-content">
+          <img class="column-img" src="./images/triangles.png" alt="" />
+          <div class="column-content">
+            <h2>Lorem ipsum dolor sit</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              fuga numquam a! Iste accusantium nobis nostrum fugit non,
+              dignissimos reprehenderit!
+            </p>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        header.classList.toggle("scrolling-active", window.scrollY > 10);
+      });
+    </script>
+  </body>
+</html>
